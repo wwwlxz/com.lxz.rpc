@@ -5,7 +5,7 @@ import com.lxz.rpc.sample.client.HelloService;
 
 public class HelloServiceTest01 {
 	public static void main(String[] args){
-		RpcProxy rpcProxy = new RpcProxy("127.0.0.1:1234");
+		RpcProxy rpcProxy = new RpcProxy("127.0.0.1:1234");//连接rpc代理
 		HelloService helloService = rpcProxy.create(HelloService.class);
 		String result = helloService.hello("world");
 		System.out.println(result);
