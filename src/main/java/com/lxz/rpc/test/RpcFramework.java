@@ -73,6 +73,7 @@ public class RpcFramework {
 	 * @param port 服务器端口
 	 * @return 远程服务
 	 */
+	@SuppressWarnings("unchecked")
 	public static <T> T refer(final Class<T> interfaceClass, final String host, final int port){
 		if(interfaceClass == null){
 			throw new IllegalArgumentException("Interface class == null");
